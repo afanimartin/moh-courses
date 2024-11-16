@@ -1,0 +1,71 @@
+<section class="auth">
+<h1>New Course</h1>
+
+<%= form_with model: @course, local: true do |f| %>
+  <div class="mb-3">
+    <%= f.label :title, "Course Title" %><br>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :description, "Course Description" %><br>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :academic_year, "Academic year e.g 2024 - 2025" %><br>
+    <%= f.text_field :academic_year, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :award_title, "Awarding title" %><br>
+    <%= f.text_field :award_title, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :awarding_body, "Awarding body" %><br>
+    <%= f.text_field :awarding_body, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :length, "Course Duration" %><br>
+    <%= f.text_field :length, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :competencies, "Competencies" %><br>
+    <%= f.text_area :competencies, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :outcomes, "Outcomes" %><br>
+    <%= f.text_area :outcomes, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :contents, "Course contents" %><br>
+    <%= f.text_area :contents, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :teaching_mode, "Teaching mode" %><br>
+    <%= f.text_area :teaching_mode, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :assessment_strategy, "Assessment strategy" %><br>
+    <%= f.text_area :assessment_strategy, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :tutor_id, "Assign Tutor" %><br>
+    <%= f.collection_select :tutor_id, User.where(role: 'tutor'), :id, :email, prompt: "Select a Tutor", class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.submit "Create Course", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= link_to "Back to Courses", courses_path %>
+</section>

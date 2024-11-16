@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  academic_year: MyString
+  awarding_body: MyString
+  length: MyString
+  award_title: MyString
+  competencies: MyText
+  outcomes: MyText
+  contents: MyText
+  teaching_mode: MyText
+  assessment_strategy: MyText
+  tutor_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  academic_year: MyString
+  awarding_body: MyString
+  length: MyString
+  award_title: MyString
+  competencies: MyText
+  outcomes: MyText
+  contents: MyText
+  teaching_mode: MyText
+  assessment_strategy: MyText
+  tutor_id: 1
