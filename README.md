@@ -1,24 +1,36 @@
-# README
+# MOH Medical Courses Admin Dashboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails application tracks course enrollments for a nursing course. It includes functionalities for admins to create courses and assign tutors. Tutors can log in to view courses assigned to them, while students can enroll in courses.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- **Admin**: Create courses, assign tutors
+- **Tutor**: View assigned courses
+- **Student**: Enroll in courses via a form
+- **Authentication**: Only existing users can log in
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Prerequisites
 
-* Database creation
+Ensure you have the following installed on your machine:
 
-* Database initialization
+- **Ruby**: Version 3.0 or higher
+- **Rails**: Version 7.0 or higher
 
-* How to run the test suite
+### Setup Instructions
 
-* Services (job queues, cache servers, search engines, etc.)
+1. **Clone the repository**:
 
-* Deployment instructions
+   - ```git clone https://github.com/afanimartin/moh-courses.git && cd moh-courses```
+2. **Install dependencies**:
+   - ```bundle install```
+3. **Create and migrate the database**:
+   - ```rails db:create```
+   - ```rails db:migrate```
+   - ```rails db:seed```
+4. **Start the Rails server**:
+   - ```bin/dev``` or ```rails server```
+5. **Visit the application**:
+   - Open your web browser and go to ```http://localhost:3000``` to see the application.
 
-* ...
