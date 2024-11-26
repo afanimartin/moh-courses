@@ -9,13 +9,15 @@ body {
 }
 
 .auth {
-  width: 60%;
+  width: 30%;
   margin: 100px auto;
-  // text-align: center;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 input#user_email.form-control, input#user_password.form-control {
-  width: 50%;
+  width: 100%;
 }
 
 #header-links {
@@ -23,4 +25,9 @@ input#user_email.form-control, input#user_password.form-control {
   justify-content: space-between;
   align-items: center;
   margin-top: 70px;
+}
+
+.alert-div {
+  width: 50%;
+  margin: 0 auto;
 }

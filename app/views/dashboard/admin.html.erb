@@ -1,0 +1,18 @@
+<%= render "shared/navbar" %>
+
+<div class="alert-div">
+  <%= render "shared/alert" %>
+</div>
+
+<div class="container">
+  <h1>Admin Dashboard</h1>
+  <p>Welcome, <%= current_user.email %>!</p>
+  <%= link_to "Manage Courses", courses_path %>
+
+  <div id="header-links">
+    <h1>All courses</h1>
+    <%= link_to "Add course", new_course_path, class: "btn btn-primary" %>
+  </div>
+
+  <%= render "shared/courses", courses: @courses %>
+</div>

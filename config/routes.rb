@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :courses
+
+  resources :enrollments
+
+  get "dashboard", to: "dashboard#show"
 end

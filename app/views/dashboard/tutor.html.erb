@@ -1,0 +1,11 @@
+<%= render "shared/navbar" %>
+
+<div class="alert-div">
+  <%= render "shared/alert" %>
+</div>
+
+<div class="container">
+  <h1>Tutor Dashboard</h1>
+  <p>Welcome, <%= current_user.email %>!</p>
+  <%= link_to "View Assigned Courses", courses_path %>
+</div>

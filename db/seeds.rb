@@ -8,4 +8,11 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-User.create!({email: "admin@moh.com.ss", password: "admin@moh"})
+address = Address.create({name: "gudele one"})
+college = College.create({name: "computer science and information technology"})
+
+User.create!({email: "admin@learning.edu.ss", password: "123456", role: "admin", address_id: address.id, college_id: college.id })
+
+User.create!({email: "tutor@learning.edu.ss", password: "123456", role: "tutor", address_id: address.id, college_id: college.id})
+
+User.create!({email: "student@learning.edu.ss", password: "123456", address_id: address.id, college_id: college.id})
